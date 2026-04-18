@@ -12,10 +12,13 @@ def index():
         path = request.form.get("path")
         mode = request.form.get("mode")
 
-        success, result = process_files(path, mode)
-
-        message = result
-        status = "success" if success else "error"
+        # 🔥 Validación básica
+        if not path:
+            message = "❌ Please enter a valid folder path"
+            status = "error"
+        else:
+            success, result = process_files(path, mode)
+            message = result
+            status = "success" if success else "error"
 
     return render_template("index.html", message=message, status=status)
-
