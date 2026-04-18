@@ -1,29 +1,46 @@
-ody {
+body {
     font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+    color: white;
     text-align: center;
     margin-top: 60px;
-    background-color: #f4f4f4;
 }
 
 h1 {
     margin-bottom: 20px;
 }
 
+form {
+    background: #2f2f4f;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
 input, select, button {
     padding: 10px;
-    margin: 8px;
+    margin: 10px;
     width: 250px;
+    border: none;
+    border-radius: 5px;
 }
 
 button {
+    background-color: #4CAF50;
+    color: white;
     cursor: pointer;
 }
 
+button:hover {
+    background-color: #45a049;
+}
+
 .success {
-    color: green;
+    color: #4CAF50;
 }
 
 .error {
-    color: red;
+    color: #ff4c4c;
 }
+
 
