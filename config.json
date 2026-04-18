@@ -1,1 +1,7 @@
+{
+  "images": ["jpg", "png"],
+  "documents": ["pdf", "docx"],
+  "videos": ["mp4"],
+  "audio": ["mp3"]
+}
 
