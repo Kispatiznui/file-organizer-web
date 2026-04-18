@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Organizer Dashboard</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+<h1>📁 File Organizer Dashboard</h1>
+
+<form method="POST">
+    <input type="text" name="path" placeholder="Enter folder path" required>
+
+    <select name="mode">
+        <option value="organize">Organize Files</option>
+        <option value="clean">Remove Duplicates</option>
+        <option value="date">Organize by Date</option>
+    </select>
+
+    <button type="submit">Run</button>
+</form>
+
+{% if message %}
+    <p class="{{ status }}">{{ message }}</p>
+{% endif %}
+
+</body>
+</html>
 
