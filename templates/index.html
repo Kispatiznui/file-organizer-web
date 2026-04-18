@@ -19,11 +19,11 @@
 
     <button type="submit">Run</button>
 </form>
-
 {% if message %}
-    <p class="{{ status }}">{{ message }}</p>
+    <div class="result {{ status }}">
+        {{ message }}
+    </div>
 {% endif %}
 
 </body>
 </html>
-
