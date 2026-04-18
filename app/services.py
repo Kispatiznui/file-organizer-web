@@ -11,8 +11,9 @@ def load_config():
         return json.load(f)
 
 def process_files(path, mode):
+    # 🔥 Validación de existencia real
     if not os.path.exists(path):
-        return False, "❌ Invalid path"
+        return False, "❌ Path does not exist"
 
     try:
         config = load_config()
@@ -26,8 +27,12 @@ def process_files(path, mode):
         elif mode == "date":
             organizar_por_fecha(path)
 
-        return True, "✅ Operation completed successfully"
+        else:
+            return False, "❌ Invalid mode selected"
+
+        return True, f"✅ Operation '{mode}' completed successfully"
 
     except Exception as e:
         return False, f"❌ Error: {str(e)}”
+
 
