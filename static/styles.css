@@ -1,1 +1,29 @@
+ody {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 60px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    padding: 10px;
+    margin: 8px;
+    width: 250px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
 
